@@ -3,52 +3,40 @@ tap "chef/chef"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-# Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Official Amazon AWS command-line interface
 brew "awscli"
-# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
-# Emacs dependency management
+brew "bash-completion"
 brew "cask"
-# Dependency manager for Cocoa projects
 brew "cocoapods"
-# GNU File, Shell, and Text utilities
 brew "coreutils"
-# Load/unload environment variables based on $PWD
 brew "direnv"
-# Distributed revision control system
 brew "git"
-# GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Manage your Java environment
+brew "htop"
 brew "jenv"
-# Generic library support script
+brew "jq"
 brew "libtool"
-# Java-based project management
+brew "mas"
 brew "maven"
-# Library for color text mode, widget based user interfaces
 brew "newt"
-# Manage multiple Node.js versions
+brew "nmap"
 brew "nvm"
-# Python version management
 brew "pyenv"
-# User interface to the TELNET protocol
 brew "telnet"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# General-purpose lossless data-compression library
+brew "watch"
+brew "wget"
 brew "zlib"
 cask "adoptopenjdk11"
 cask "adoptopenjdk13"
+cask "adoptopenjdk14"
 cask "adoptopenjdk8"
 cask "appcleaner"
 cask "authy"
 cask "blackhole"
 cask "chef-workstation"
-cask "discord"
 cask "firefox"
 cask "flux"
 cask "gimp"
@@ -57,14 +45,23 @@ cask "haptickey"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keka"
-cask "kindle"
 cask "nightowl"
 cask "postman"
 cask "shortcuts"
 cask "sizeup"
-cask "slack"
 cask "smcfancontrol"
-cask "the-unarchiver"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
+mas "1Password 7", id: 1333542190
+mas "Amphetamine", id: 937984704
+mas "Download Shuttle", id: 847809913
+mas "Kindle", id: 405399194
+mas "OneDrive", id: 823766827
+mas "Pocket", id: 568494494
+mas "Slack", id: 803453959
+mas "The Unarchiver", id: 425424353
+mas "Trello", id: 1278508951
+mas "Twitter", id: 409789998
+mas "WhatsApp", id: 1147396723
+mas "Xcode", id: 497799835
