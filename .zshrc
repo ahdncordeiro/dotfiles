@@ -17,6 +17,10 @@ eval "$(pyenv init -)"
 # source /usr/local/opt/chruby/share/chruby/auto.sh
 # chruby ruby
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+if [ ! -d "$HOME/.rvm" ]; then
+    \gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby
+fi
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -32,7 +36,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Flutter
-# export PATH="$PATH:/Users/andrecordeiro/code/flutter/bin"
+# export PATH="$PATH:$HOME/code/flutter/bin"
 
 # Don't save commands starting with space on history
 setopt HIST_IGNORE_SPACE
@@ -63,7 +67,12 @@ setopt HIST_IGNORE_SPACE
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/andrecordeiro/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+
+# oh-my-zsh installation
+if [ ! -d "$ZSH" ]; then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
