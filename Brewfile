@@ -61,7 +61,6 @@ mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
 mas "Download Shuttle", id: 847809913
 mas "Kindle", id: 405399194
-mas "OneDrive", id: 823766827
 mas "Pocket", id: 568494494
 mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
