@@ -1,0 +1,3 @@
+# Place this file on ~/
+[core]
+    excludesfile = ~/.git/.gitignore_global
