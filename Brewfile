@@ -39,6 +39,7 @@ cask "adoptopenjdk8"
 cask "appcleaner"
 cask "authy"
 cask "blackhole"
+cask "blender"
 cask "cheatsheet"
 cask "chef-workstation"
 cask "docker"
@@ -72,12 +73,14 @@ cask "steam"
 cask "teamviewer"
 cask "telegram"
 cask "tor-browser"
+cask "unity-hub"
 cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
 cask "zoomus"
 mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
+mas "Developer", id: 640199958
 mas "Download Shuttle", id: 847809913
 mas "Kindle", id: 405399194
 mas "Playgrounds", id: 1496833156
