@@ -63,6 +63,7 @@ cask "nvidia-geforce-now"
 cask "pokerstars"
 cask "postman"
 cask "private-internet-access"
+cask "qbittorrent"
 cask "redisinsight"
 cask "shortcuts"
 cask "sizeup"
@@ -85,6 +86,7 @@ mas "Download Shuttle", id: 847809913
 mas "Kindle", id: 405399194
 mas "Playgrounds", id: 1496833156
 mas "Pocket", id: 568494494
+mas "Save to Pocket", id: 1477385213
 mas "Slack", id: 803453959
 mas "The Unarchiver", id: 425424353
 mas "Trello", id: 1278508951
