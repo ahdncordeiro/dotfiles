@@ -1,12 +1,12 @@
 # path export
-export PATH="$PATH:/usr/local/sbin"
+export PATH="$PATH:/usr/local/bin:/usr/local/sbin"
 
 # java
 # get list of java installations:
 # ls -1 /Library/Java/JavaVirtualMachines
 # or
 # /usr/libexec/java_home -V
-export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$PATH:$HOME/.jenv/bin"
 eval "$(jenv init -)"
 
 # pyenv
@@ -34,6 +34,9 @@ eval "$(direnv hook zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# rust
+export PATH="$PATH:$HOME/.cargo/bin"
 
 # Flutter
 # export PATH="$PATH:$HOME/code/flutter/bin"
