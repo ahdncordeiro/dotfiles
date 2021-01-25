@@ -688,6 +688,8 @@
 	<true/>
 	<key>SeparateStatusBarsPerPane</key>
 	<true/>
+	<key>ShowTimestampsByDefault</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SuppressRestartAnnouncement</key>
