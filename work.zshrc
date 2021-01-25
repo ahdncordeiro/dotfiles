@@ -24,6 +24,9 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+# libpq Postgres
+export PATH="$PATH:/usr/local/opt/libpq/bin"
+
 # direnv
 eval "$(direnv hook zsh)"
 
@@ -38,36 +41,8 @@ export NVM_DIR="$HOME/.nvm"
 # rust
 export PATH="$PATH:$HOME/.cargo/bin"
 
-# Flutter
-# export PATH="$PATH:$HOME/code/flutter/bin"
-
 # Don't save commands starting with space on history
 setopt HIST_IGNORE_SPACE
-
-# Set PySpark version to user Python 3
-# export PYSPARK_PYTHON=python3
-# export PYSPARK_DRIVER_PYTHON=python3
-
-# Set Spark Local IP to 127.0.0.1 to avoid not being able to retrive port when running Spark on GAP's VPN
-# export SPARK_LOCAL_IP=127.0.0.1
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
-#         . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
